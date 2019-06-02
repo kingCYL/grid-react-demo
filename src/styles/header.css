@@ -1,0 +1,98 @@
+.header-layout {
+    grid-area: header;
+    display: grid;
+    rid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-areas: "logo nav search infos"
+}
+
+.logo {
+    grid-area: logo;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    color: #61dafb;
+    background-color: #20232a;
+}
+
+.logoImg {
+    animation: App-logo-spin infinite 20s linear;
+    height: 30px;
+    pointer-events: none;
+}
+
+.logoImgDiv {
+    justify-self: end;
+    padding-top: 5px;
+}
+
+.appName {
+    font-size: 20px;
+}
+
+.infos,
+.nav {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    background-color: #20232a;
+}
+
+.style {
+    color: #fff;
+}
+
+.nav {
+    grid-area: nav;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search {
+    grid-area: search;
+    grid-template-columns: auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #20232a;
+}
+
+.search>div>span {
+    color: #fff;
+    padding-right: 5px;
+}
+
+.search>div>input {
+    outline: none;
+    color: #fff;
+    background-color: rgb(53, 59, 69);
+    border: none;
+    height: 25px;
+    border-radius: 0.3em;
+}
+
+.infos {
+    grid-area: infos;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav a:hover,
+.nav .clickColor,
+.infos>div:hover {
+    color: #61dafb;
+    cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

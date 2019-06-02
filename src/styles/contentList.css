@@ -1,0 +1,45 @@
+.contentMain {
+    grid-area: contentList;
+    overflow: auto;
+}
+
+.items {
+    padding: 15px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #e6e7e9;
+    background-color: rgba(53, 59, 69, .2);
+    border-radius: 0.3em;
+    height: 120px;
+}
+
+.image {
+    width: 24px;
+    height: 24px;
+}
+
+.submissionImage {
+    height: 64px;
+    width: 64px;
+}
+
+.description>span {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.votes {
+    cursor: pointer;
+    color: #3273dc;
+}
+
+.votes>span {
+    margin-left: 15px;
+    color: #888;
+    cursor: pointer;
+}
