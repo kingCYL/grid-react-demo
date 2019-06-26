@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # react-demo-2019
-#### 这是一个仿react官网的界面，其中有简易的增删改查功能，主要是为了上手react框架。
+#### 这是一个仿react官网的界面，但中间做了列表，有增删改查/模糊查询功能，主要是为了上手react框架。
 界面使用grid实现自适应布局,demo涵盖以下常用知识点：
 ### 1.props && state，状态提升（父子传值，包括复杂数据类型传递，事件传递）
 ### 2.表单
